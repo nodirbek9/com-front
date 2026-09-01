@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "https://YOUR-BACKEND-URL.onrender.com/api/:path*" },
+    { "source": "/tasks", "destination": "https://YOUR-BACKEND-URL.onrender.com/tasks" },
+    { "source": "/tasks/:path*", "destination": "https://YOUR-BACKEND-URL.onrender.com/tasks/:path*" },
+    { "source": "/v3/api-docs", "destination": "https://YOUR-BACKEND-URL.onrender.com/v3/api-docs" },
+    { "source": "/swagger-ui/:path*", "destination": "https://YOUR-BACKEND-URL.onrender.com/swagger-ui/:path*" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
