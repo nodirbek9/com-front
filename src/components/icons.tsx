@@ -80,8 +80,8 @@ export const BuildingIcon = (p: IconProps) => (
 export const UploadIcon = (p: IconProps) => (
   <svg {...base(p)}><path d="M12 15V4M8 8l4-4 4 4" /><path d="M4.5 15v3.5a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V15" /></svg>
 );
-export const SpinnerIcon = (p: IconProps) => (
-  <svg viewBox="0 0 24 24" fill="none" className="animate-spin" {...p}>
+export const SpinnerIcon = ({ className, ...p }: IconProps) => (
+  <svg viewBox="0 0 24 24" fill="none" {...p} className={['animate-spin', className].filter(Boolean).join(' ')}>
     <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" strokeOpacity="0.2" />
     <path d="M21 12a9 9 0 0 0-9-9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
   </svg>
